@@ -49,6 +49,7 @@ output "docker_hub_user" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | aws_region | AWS region to use | string | `us-east-1` | no |
+| aws_profile | AWS credentials profile to use | string | `` | no |
 | secret_id | Specifies the secret containing the version that you want to retrieve. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. | string | - | yes |
 | version_id | Specifies the unique identifier of the version of the secret that you want to retrieve. Overrides version_stage | string | `` | no |
 | version_stages | Specifies the secret version that you want to retrieve by the staging label attached to the version. Defaults to AWSCURRENT | string | `AWSCURRENT` | no |

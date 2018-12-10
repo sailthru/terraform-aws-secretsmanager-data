@@ -1,6 +1,7 @@
 provider "aws" {
   version = "~> 1.40"
   region = "${var.aws_region}"
+  profile = "${var.aws_profile}"
 }
 
 data "aws_secretsmanager_secret_version" "this" {
