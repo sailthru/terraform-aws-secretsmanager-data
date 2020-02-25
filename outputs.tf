@@ -1,3 +1,4 @@
 output "secret_map" {
-  value = "${data.external.this.result }"
+  value = data.external.this.result
 }
+

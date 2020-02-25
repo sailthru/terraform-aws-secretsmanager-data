@@ -1,11 +1,11 @@
 variable "aws_region" {
   description = "AWS region to use"
-  default = "us-east-1"
+  default     = "us-east-1"
 }
 
 variable "aws_profile" {
   description = "AWS profile to use (if any)"
-  default = ""
+  default     = ""
 }
 
 variable "secret_id" {
@@ -14,10 +14,11 @@ variable "secret_id" {
 
 variable "version_id" {
   description = "Specifies the unique identifier of the version of the secret that you want to retrieve. Overrides version_stage"
-  default = ""
+  default     = ""
 }
 
 variable "version_stage" {
   description = "Specifies the secret version that you want to retrieve by the staging label attached to the version. Defaults to AWSCURRENT"
-  default = "AWSCURRENT"
+  default     = "AWSCURRENT"
 }
+
